@@ -1,7 +1,5 @@
-#Full Screen CSS Carouse No Javascript 
+# Full CSS Carousel No Javascript 
 
-CSS Caousel Made with based on CSS3 Animation and Animation Delay. No Javascript Code Used in the proejct. When You want a carousel with  2 or 3 image you can easily used this concept. 
+CSS carousel made with based on CSS3 animation and animation delay. No JavaScript code used in the proejct. When you want a carousel with  2 or 3 image, you can easily used this concept. 
  
-
-
 Thanks
