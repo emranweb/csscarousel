@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-
-body{
+body {
   font-family: 'Roboto';
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
+  font-size: normal;
+  font-weight: normal;
 }
 
-ul{
+ul {
   list-style: none;
 }
+
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -19,17 +20,15 @@ ul{
   left: 0px;
   z-index: 0;
 }
+
 .cb-slideshow:after {
   content: '';
-
 }
+
 .cb-slideshow li div h1 {
   font-size: 160px;
-  padding: 0 30px;
-  line-height: 120px;
   color: #fff;
 }
-
 
 .cb-slideshow li span {
   width: 100%;
@@ -45,232 +44,307 @@ ul{
   z-index: 0;
   animation: imageAnimation2 36s linear infinite 0s;
 }
+
 .cb-slideshow li div {
-  z-index: 1000;
+  z-index: 1;
   position: absolute;
-  bottom: 30px;
-  left: 0px;
-  width: 100%;
-  text-align: center;
   opacity: 0;
   color: #fff;
+  text-align: center;
+  width: 100%;
+  top: 25%;
   animation: titleAnimation3 36s linear infinite 0s;
+
 }
 
 .cb-slideshow li:nth-child(1) span {
-  background-image: url(https://images.pexels.com/photos/29017/pexels-photo-29017.jpg?w=940&h=650&auto=compress&cs=tinysrgb)
+  background-image: url(https://picsum.photos/id/684/1920/1080);
 }
+
 .cb-slideshow li:nth-child(2) span {
-  background-image: url(https://images.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url(https://picsum.photos/id/685/1920/1080);
   animation-delay: 6s;
 }
+
 .cb-slideshow li:nth-child(3) span {
-  background-image: url(https://images.pexels.com/photos/57423/red-rose-rose-rose-bloom-blossom-57423.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url(https://picsum.photos/id/688/1920/1080);
   animation-delay: 12s;
 }
+
 .cb-slideshow li:nth-child(4) span {
-  background-image: url(https://images.pexels.com/photos/99551/hot-air-balloon-valley-sky-99551.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url(https://picsum.photos/id/681/1920/1080);
   animation-delay: 18s;
 }
+
 .cb-slideshow li:nth-child(5) span {
-  background-image: url(https://images.pexels.com/photos/28221/pexels-photo-28221.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url(https://picsum.photos/id/684/1920/1080);
   animation-delay: 24s;
 }
+
 .cb-slideshow li:nth-child(6) span {
-  background-image: url(https://images.pexels.com/photos/129922/pexels-photo-129922.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url(https://picsum.photos/id/686/1920/1080);
   animation-delay: 30s;
 }
+
 .cb-slideshow li:nth-child(2) div {
   animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) div {
 
+.cb-slideshow li:nth-child(3) div {
   animation-delay: 12s;
 }
+
 .cb-slideshow li:nth-child(4) div {
   animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) div {
 
+.cb-slideshow li:nth-child(5) div {
   animation-delay: 24s;
 }
+
 .cb-slideshow li:nth-child(6) div {
   animation-delay: 30s;
 }
 
 /* Animation for the slideshow images */
-
 @keyframes imageAnimation {
-  0% { opacity: 0;
-    animation-timing-function: ease-in; }
-  8% { opacity: 1;
-    animation-timing-function: ease-out; }
-  17% { opacity: 1 }
-  25% { opacity: 0 }
-  100% { opacity: 0 }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-
-
-
-
 
 @keyframes imageAnimation4 {
   0% {
     opacity: 0;
     animation-timing-function: ease-in;
   }
+
   8% {
     opacity: 1;
     transform: scale(1.05);
     animation-timing-function: ease-out;
   }
+
   17% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
+
   25% {
     opacity: 0;
     transform: scale(1.1);
   }
-  100% { opacity: 0 }
-}
 
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes imageAnimation3 {
   0% {
     opacity: 0;
     animation-timing-function: ease-in;
   }
+
   8% {
     opacity: 1;
     transform: scale(1.05);
     animation-timing-function: ease-out;
   }
+
   17% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
+
   22% {
     opacity: 0;
-    -webkit-transform: scale(1.1) translateY(-20%);
+    -webkit-transform: scale(1.2) translateY(-20%);
   }
+
   25% {
     opacity: 0;
-    -transform: scale(1.1) translateY(-100%);
+    -transform: scale(1.2) translateY(-100%);
   }
-  100% { opacity: 0 }
-}
 
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes imageAnimation2 {
   0% {
     opacity: 0;
     animation-timing-function: ease-in;
   }
+
   8% {
     opacity: 1;
     transform: scale(1.05);
     animation-timing-function: ease-out;
   }
+
   17% {
     opacity: 1;
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.2) rotate(3deg);
   }
+
   25% {
     opacity: 0;
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.2) rotate(3deg);
   }
-  100% { opacity: 0 }
+
+  100% {
+    opacity: 0;
+  }
 }
-
-
 
 /* **********Animation for the title *************/
-
 @keyframes titleAnimation {
-  0% { opacity: 0 }
-  8% { opacity: 1 }
-  17% { opacity: 1 }
-  19% { opacity: 0 }
-  100% { opacity: 0 }
-}
+  0% {
+    opacity: 0;
+  }
 
+  8% {
+    opacity: 1;
+  }
+
+  17% {
+    opacity: 1;
+  }
+
+  19% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes titleAnimation2 {
   0% {
     opacity: 0;
     transform: translateX(200px);
   }
+
   8% {
     opacity: 1;
     transform: translateX(0px);
   }
+
   17% {
     opacity: 1;
     transform: translateX(0px);
   }
+
   19% {
     opacity: 0;
     transform: translateX(-400px);
   }
-  25% { opacity: 0 }
-  100% { opacity: 0 }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-
-
 
 @keyframes titleAnimation3 {
   0% {
     opacity: 0;
     transform: translateY(-300%);
   }
+
   8% {
     opacity: 1;
     transform: translateY(0%);
   }
+
   17% {
     opacity: 1;
     transform: translateY(0%);
   }
+
   19% {
     opacity: 0;
     transform: translateY(100%);
   }
-  25% { opacity: 0 }
-  100% { opacity: 0 }
-}
 
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes titleAnimation4 {
   0% {
     opacity: 0;
     transform: translateY(200px);
   }
+
   8% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   17% {
     opacity: 1;
     transform: scale(1);
   }
-  19% { opacity: 0 }
+
+  19% {
+    opacity: 0;
+  }
+
   25% {
     opacity: 0;
     transform: scale(10);
   }
-  100% { opacity: 0 }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-
 /* Show at least something when animations not supported */
-.no-cssanimations .cb-slideshow li span{
+.no-cssanimations .cb-slideshow li span {
   opacity: 1;
 }
 
 @media screen and (max-width: 1140px) {
-  .cb-slideshow li div h3 { font-size: 140px }
+  .cb-slideshow li div h3 {
+    font-size: 140px;
+  }
 }
+
 @media screen and (max-width: 600px) {
-  .cb-slideshow li div h3 { font-size: 80px }
+  .cb-slideshow li div h3 {
+    font-size: 80px;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */
